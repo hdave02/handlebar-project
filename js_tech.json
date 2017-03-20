@@ -1,0 +1,74 @@
+	{"jsTechList":[
+		{
+			"name": "jquery",
+			"type": "library",
+			"image": "images/jquery-logo.png",
+			"description": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.",
+			"reference": "https://jquery.com/"
+		},
+		{
+			"name": "polymer",
+			"type": "library",
+			"image": "images/polymer-logo.png",
+			"description": "Polymer is a lightweight library that helps you take full advantage of Web Components. With Web Components, you can create reusable custom elements that interoperate seamlessly with the browser’s built-in elements, or break your app up into right-sized components, making your code cleaner and less expensive to maintain.",
+			"reference": "https://www.polymer-project.org/"
+		},
+		{
+			"name": "reactjs",
+			"type": "library",
+			"image": "images/react-logo.png",
+			"description": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.",
+			"reference": "https://facebook.github.io/react/"
+		},
+		{
+			"name": "underscorejs",
+			"type": "library",
+			"image": "images/underscore-logo.png",
+			"description": "Underscore is a JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects. Underscore provides over 100 functions that support both your favorite workaday functional helpers: map, filter, invoke — as well as more specialized goodies: function binding, javascript templating, creating quick indexes, deep equality testing, and so on.",
+			"reference": "http://underscorejs.org/"
+		},
+		{
+			"name": "lodash",
+			"type": "library",
+			"image": "images/lodash-logo.png",
+			"description": "A modern JavaScript utility library delivering modularity, performance & extras. Lodash makes JavaScript easier by taking the hassle out of working with arrays, numbers, objects, strings, etc. Lodash’s modular methods are great for: Iterating arrays, objects, & strings Manipulating & testing values Creating composite functions",                 
+			"reference": "https://lodash.com/"
+		},
+		{
+			"name": "backbonejs",
+			"type": "library",
+			"image": "images/backbone-logo.png",
+			"description": "Backbone.js gives structure to web applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface.",
+			"reference": "http://backbonejs.org/"
+		},
+		{
+			"name": "knockoutjs",
+			"type": "library",
+			"image": "images/knockoutjs-logo.png",
+			"description": "Knockout is a JavaScript library that helps you to create rich, responsive display and editor user interfaces with a clean underlying data model. Any time you have sections of UI that update dynamically (e.g., changing depending on the user’s actions or when an external data source changes), KO can help you implement it more simply and maintainably.",
+			"reference": "http://knockoutjs.com/"
+		},
+		{
+			"name": "angularjs",
+			"type": "framework",
+			"image": "images/angular-logo.png",
+			"description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write.",
+			"reference": "https://angularjs.org/"
+		},            
+		{
+			"name": "emberjs",
+			"type": "framework",
+			"image": "images/ember-logo.png",
+			"description": "Ember.js is an open-source JavaScript web framework, based on the Model–view–viewmodel (MVVM) pattern. It allows developers to create scalable single-page web applications by incorporating common idioms and best practices into the framework.",
+			"reference": "http://emberjs.com/"
+		},
+		{
+			"name": "d3js",
+			"type": "library",
+			"image": "images/d3-logo.png",
+			"description": "D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.",
+			"reference": "https://d3js.org/"
+		}
+		
+	]
+}

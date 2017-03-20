@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" /> 
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" /> 
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+</head>
+<body>
+	<!--1. Data (json format!) -->
+	<script>
+		var url='js_tech.json'; 
+	</script>
+
+	<!-- 2. hero -->
+	<div class="container">
+		<header>
+			<h1>JavaScript Libraries and Frameworks</h1>
+		</header>
+		<div id="hero">
+			
+		</div>
+		<!-- 3. Template -->
+		<script id="heroTemplate" type="text/handlebars-template">
+			<img src="{{this.image}}">
+			<div class="desc">
+				{{this.description}}
+			</div>
+			<div class="moreInfo">
+				<button>Veiw more Info</button>
+				<div class="reference">{{this.reference}}</div>
+			</div>
+
+		</script>
+		<!-- 2. tech -->
+		<div id="tech">
+			
+		</div>
+		<!-- 3. Template -->
+		<script id="techTemplate" type="text/handlebars-template">
+			{{#jsTechList}}
+			<div class="current-tech" data-index="{{@index}}">
+				<img src="{{this.image}}">
+				<div class="desc">
+					{{this.description}}
+				</div>
+				<div class="reference">
+					<a href="{{this.reference}}"  target="_blank">More Info</a>
+				</div>				
+			</div>
+			{{/jsTechList}}
+		</script>
+	</div>
+
+
+	<!--4. Handlebars.js -->
+
+
+	<script type="text/javascript">
+		var heroFunction = function(url, heroTemplate, hero) {
+			var currentTech = $(".current-tech");
+			var currentHero;
+			$.getJSON(url, function (data){
+
+				var template = $(heroTemplate).html();
+				$(".current-tech").on("mouseover",function(e){
+					var $tmpHero = $(e.target).closest(".current-tech").attr("data-index")
+					if(currentHero != tmpHero){
+						currentHero = tmpHero;
+						$(hero).show();
+						var temp = Handlebars.compile(template)({data:currentTech[currentHero]});
+						$(hero).append(temp);
+					}
+				});
+			});
+		}
+
+		heroFunction(url, "#heroTemplate", "#hero");
+
+		var techFunction = function(url, techTemplate, tech) {
+			$.getJSON(url, function (data){
+				var template = $(techTemplate).html();
+				var temp = Handlebars.compile(template)(data);
+				$(tech).append(temp);
+			});
+		}
+		techFunction (url, "#techTemplate", "#tech");
+
+	</script>
+</body>
+</html>
