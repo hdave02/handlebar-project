@@ -1,0 +1,91 @@
+body{
+ 	font-family: Helvetica,​Arial,​sans-serif;
+}
+
+.container{
+	max-width: 960px;
+	margin:0 auto;
+	min-width: 480px;
+	padding:10px;
+}
+h1{
+	text-align: center;
+	font: italic 2em "Open Sans", sans-serif;
+}
+
+#hero{
+	background: #E5E5E5;
+	border:2px solid #C0C0C0;
+	padding:10px;
+	overflow: hidden;
+	display: none;
+}
+
+#heroTemplate img{
+	float:left;
+	margin-right: 1%;
+	float:left;
+	width: 20%;
+}
+#heroTemplate .moreInfo{
+	float: right;
+	margin-left: 1%;
+	text-align: center;
+	width:28%;
+}
+#heroTemplate .desc{
+	width: 50%;
+	float: left;
+	font-size: 14px;
+
+}
+button{
+	background: #B7B7B7;
+	border:2px solid #727272;
+	padding: 15px;
+	font-size: 17px;
+	width:100%;
+	min-width: 150px;
+}
+
+#hero button{
+	margin-bottom: 30px;
+}
+
+.reference{
+	font-size: 23px;
+	margin-bottom: 20px;
+}
+
+#tech{
+	overflow: hidden;
+}
+
+.current-tech{
+	float: left;
+	text-align: center;
+	background: #E5E5E5;
+	border:2px solid #C0C0C0;
+	padding:15px;
+	margin: 2% 2% 0 0;
+	width: 30%;
+	height: 500px;
+	position: relative;
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+
+
+}
+.current-tech > img {
+		width: 78%;
+		height: 100px;
+		margin-bottom: 30px;
+	}
+
+.current-tech > .desc {
+	height: 214px;
+	font-size: 13px;
+	margin: 35px 2%; 
+	line-height: 18px;
+}
